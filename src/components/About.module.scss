@@ -1,0 +1,7 @@
+@import "/src/styles/config";
+
+.wrapper {
+  height: 100vh;
+  background-color: $primary-lighter;
+  scroll-snap-align: start;
+}

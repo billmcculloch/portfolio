@@ -1,0 +1,38 @@
+@use "sass:math";
+
+// 01. Media Query Breakpoints
+$mobile-portrait-max: 478px;
+$mobile-landscape-max: 767px;
+$tablet-max: 991px;
+$large-min: 1280px;
+$xlarge-min: 1440px;
+$xxlarge-min: 1920px;
+
+$primary: #517582;
+$primary-lighter: #678e9b;
+$primary-darker: #416270;
+$background-white: #faf3e5;
+$highlights: #a19582;
+
+// 02. Colours
+$yellow: #ffd068;
+$red: #f56d4c;
+$blue: #8bd1d0;
+$grey--dark: #2e3649;
+$grey: #485570;
+$grey--light: #9599a2;
+$grey--transparent: rgb(0 7 18 / 60%);
+$white: #dfe4e6;
+$bright-white: #f6f7f9;
+$black: #0a0a0a;
+$white: #fff;
+$light-blue: #bfddd5;
+
+$default-font-color: $grey;
+$default-link-color: $grey;
+$default-hover-color: $grey--dark;
+
+$body-font-family: "Archivo", sans-serif;
+$default-font-family: $body-font-family;
+$font-family: $body-font-family;
+$heading-font-family: "Clash Display", sans-serif;

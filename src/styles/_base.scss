@@ -1,0 +1,25 @@
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100vh;
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $background-white;
+}
+
+:root {
+  --color-yellow: #{$yellow};
+  --color-red: #{$red};
+  --color-blue: #{$blue};
+  --color-grey-dark: #{$grey--dark};
+  --color-grey: #{$grey};
+  --color-grey-light: #{$grey--light};
+  --color-grey-transparent: #{$grey--transparent};
+  --color-white: #{$white};
+  --color-black: #{$black};
+  // Add additional font families used here
+}
