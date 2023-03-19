@@ -1,20 +1,6 @@
+# Welcome to my Portfolio
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <!-- <a href="">
-    <img src="" alt="Logo" width="80" height="80">
-  </a> -->
-
-  <h3 align="center">Welcome to my Portfolio</h3>
-
-  <p align="center">
-    A bit about me and what I've worked on. 
-    <br />
-    <a href="">Live site</a>
-  </p>
-</div>
-
+Learn a bit about me and what I've worked on [here](_blank)
 
 ### Built With
 
