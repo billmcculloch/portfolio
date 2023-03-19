@@ -1,12 +1,10 @@
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="">
+  <!-- <a href="">
     <img src="" alt="Logo" width="80" height="80">
-  </a>
+  </a> -->
 
   <h3 align="center">Welcome to my Portfolio</h3>
 
@@ -22,14 +20,13 @@
 
 Some of the tools that made this project possible:
 
-* [![React][React.js]][React-url]
-* [![Sass][Sass-lang.com]][Sass-url]
-* [![Vite][Vitejs.dev]][Svelte-url]
+* React
+* Sass
+* Vite
 
 
 ## Contact
 
-Bill McCulloch - billrmcculloch@gmail.com
+Bill McCulloch
+billrmcculloch@gmail.com
 
-<br/>
-<p align="left">(<a href="#readme-top">back to top</a>)</p>
