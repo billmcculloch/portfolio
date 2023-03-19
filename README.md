@@ -13,6 +13,6 @@ Some of the tools that made this project possible:
 
 ## Contact
 
-Bill McCulloch
+Bill McCulloch <br/>
 billrmcculloch@gmail.com
 
