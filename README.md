@@ -7,9 +7,10 @@ Learn a bit about me and what I've worked on [here](_blank)
 Some of the tools that made this project possible:
 
 * React
+* Typescript
 * Sass
 * Vite
-
+* GSAP
 
 ## Contact
 
