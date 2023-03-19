@@ -2,22 +2,18 @@ body {
   color: $default-font-color;
   font-family: $body-font-family;
   font-size: 1.1375rem;
-  font-weight: 300;
   line-height: 1.15;
 }
 
 a {
   color: $default-link-color;
-  font-weight: 400;
   text-decoration: underline;
-
   &:hover {
     color: $default-hover-color;
   }
 }
 
 h1 {
-  font-weight: 500;
   font-family: $heading-font-family;
 }
 
@@ -27,9 +23,7 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
-  font-weight: 400;
 }
-
 p {
-  font-weight: 300;
+  font-weight: 400;
 }

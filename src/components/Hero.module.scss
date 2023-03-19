@@ -1,0 +1,31 @@
+@import "/src/styles/config";
+
+.wrapper {
+  height: 100vh;
+  background-color: $background;
+  // margin-top: 100px;
+  p {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 0;
+    font-size: 3rem;
+  }
+
+  .bill {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    margin-left: 5px;
+  }
+}
+
+.sticky {
+  position: fixed;
+  height: 60px;
+  background-color: $background;
+  top: 0;
+  left: 0;
+  right: 0;
+}
