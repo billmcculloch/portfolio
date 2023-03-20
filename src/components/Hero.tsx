@@ -9,7 +9,7 @@ function Hero() {
   const logoRef = useRef(null);
   const cursorRef = useRef(null);
 
-  const [height, setHeight] = useState<number>(500);
+  const [height, setHeight] = useState<number>(650);
   const [sticky, setSticky] = useState<boolean>(false);
   const [cursorX, setCursorX] = useState<number>();
   const [cursorY, setCursorY] = useState<number>();
@@ -24,9 +24,14 @@ function Hero() {
   window.removeEventListener("scroll", () => handleScroll());
 
   const handleScroll = () => {
+    var div = document.getElementById("bill");
+    var top = div?.getBoundingClientRect().y;
+
+    console.log(top);
+
     let scrollTop = window.scrollY,
       minHeight = 60,
-      logoHeight = Math.max(minHeight, 500 - scrollTop);
+      logoHeight = Math.max(minHeight, 650 - scrollTop);
     setHeight(logoHeight);
 
     if (scrollTop <= 1) {
@@ -43,13 +48,17 @@ function Hero() {
       setCursor(true);
     }
 
-    console.log(scrollTop);
-
-    if (scrollTop > 506) {
+    if (logoHeight == minHeight && top! <= 0) {
       setSticky(true);
     } else {
       setSticky(false);
     }
+
+    // if (top! > 0) {
+    //   setSticky(true);
+    // } else {
+    //   setSticky(false);
+    // }
   };
 
   // const _showName = () => {
@@ -83,7 +92,7 @@ function Hero() {
           /> */}
           Hello, I'm
         </p>
-        <div id="billcontainer" className={sticky ? s.sticky : ""}>
+        <div className={sticky ? s.sticky : ""}>
           <img
             src=" src/assets/Bill.svg"
             className={s.bill}
@@ -92,12 +101,12 @@ function Hero() {
             style={{ height: height, objectFit: "contain" }}
           />
         </div>
-        <div
-          ref={cursorRef}
-          className={s.cursor}
-          style={{ top: cursorY + "px", left: cursorX + "px" }}
-        />
       </div>
+      <div
+        ref={cursorRef}
+        className={s.cursor}
+        style={{ top: cursorY + "px", left: cursorX + "px" }}
+      />
     </>
   );
 }
