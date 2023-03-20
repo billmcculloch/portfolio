@@ -29,3 +29,14 @@
   left: 0;
   right: 0;
 }
+
+.cursor {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  background-color: $background;
+  border-radius: 50%;
+  z-index: 999;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}

@@ -7,26 +7,43 @@ import Typewriter from "typewriter-effect";
 
 function Hero() {
   const logoRef = useRef(null);
-  const pRef = useRef(null);
+  const cursorRef = useRef(null);
 
-  const [height, setHeight] = useState(650);
-  const [sticky, setSticky] = useState(false);
+  const [height, setHeight] = useState<number>(650);
+  const [sticky, setSticky] = useState<boolean>(false);
+  const [cursorX, setCursorX] = useState<number>();
+  const [cursorY, setCursorY] = useState<number>();
+  const [cursor, setCursor] = useState<boolean>(false);
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => handleScroll());
-    window.removeEventListener("scroll", () => handleScroll());
-  }, []);
+  window.addEventListener("mousemove", (e) => {
+    setCursorX(e.pageX);
+    setCursorY(e.pageY);
+  });
+
+  window.addEventListener("scroll", () => handleScroll());
+  window.removeEventListener("scroll", () => handleScroll());
 
   const handleScroll = () => {
     let scrollTop = window.scrollY,
       minHeight = 60,
       logoHeight = Math.max(minHeight, 650 - scrollTop);
     setHeight(logoHeight);
-    console.log(scrollTop);
-    if (scrollY >= 696.5) {
+
+    if (scrollTop >= 696.5) {
       setSticky(true);
     } else {
       setSticky(false);
+    }
+
+    gsap.to(cursorRef.current, {
+      opacity: scrollTop < 100 ? 1 : 0,
+      duration: 0,
+    });
+
+    if (scrollTop > 100) {
+      setCursor(true);
+    } else {
+      setCursor(false);
     }
   };
 
@@ -44,7 +61,10 @@ function Hero() {
 
   return (
     <>
-      <div className={s.wrapper}>
+      <div
+        className={s.wrapper}
+        style={{ cursor: cursor ? "inherit" : "none" }}
+      >
         <p>
           {/* <Typewriter
             onInit={(typewriter) => {
@@ -67,6 +87,11 @@ function Hero() {
             style={{ height: height }}
           />
         </div>
+        <div
+          ref={cursorRef}
+          className={s.cursor}
+          style={{ top: cursorY + "px", left: cursorX + "px" }}
+        />
       </div>
     </>
   );
