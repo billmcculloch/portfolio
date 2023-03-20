@@ -30,7 +30,7 @@ function Hero() {
     console.log(top);
 
     let scrollTop = window.scrollY,
-      minHeight = 60,
+      minHeight = 70,
       logoHeight = Math.max(minHeight, 650 - scrollTop);
     setHeight(logoHeight);
 
