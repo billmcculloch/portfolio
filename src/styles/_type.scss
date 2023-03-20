@@ -7,7 +7,7 @@ body {
 
 a {
   color: $default-link-color;
-  text-decoration: underline;
+  text-decoration: none;
   &:hover {
     color: $default-hover-color;
   }

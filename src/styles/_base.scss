@@ -7,18 +7,18 @@ body,
 }
 
 body {
-  background-color: $background;
+  background-color: $green;
 }
 
-:root {
-  --color-yellow: #{$yellow};
-  --color-red: #{$red};
-  --color-blue: #{$blue};
-  --color-grey-dark: #{$grey--dark};
-  --color-grey: #{$grey};
-  --color-grey-light: #{$grey--light};
-  --color-grey-transparent: #{$grey--transparent};
-  --color-white: #{$white};
-  --color-black: #{$black};
-  // Add additional font families used here
-}
+// :root {
+//   // --color-yellow: #{$yellow};
+//   // --color-red: #{$red};
+//   // --color-blue: #{$blue};
+//   // --color-grey-dark: #{$grey--dark};
+//   // --color-grey: #{$grey};
+//   // --color-grey-light: #{$grey--light};
+//   // --color-grey-transparent: #{$grey--transparent};
+//   // --color-white: #{$white};
+//   // --color-black: #{$black};
+//   // Add additional font families used here
+// }
