@@ -1,6 +1,7 @@
 @import "/src/styles/config";
 
 .wrapper {
+  scroll-snap-type: proximity;
   height: 100vh;
   background-color: $background;
   // margin-top: 100px;
