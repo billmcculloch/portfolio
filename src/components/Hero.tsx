@@ -27,8 +27,6 @@ function Hero() {
     var div = document.getElementById("bill");
     var top = div?.getBoundingClientRect().y;
 
-    console.log(top);
-
     let scrollTop = window.scrollY,
       minHeight = 70,
       logoHeight = Math.max(minHeight, 650 - scrollTop);

@@ -1,0 +1,29 @@
+@import "/src/styles/config";
+
+.wrapper {
+  display: flex;
+  background-color: $blue;
+  height: 80vh;
+  flex-direction: column;
+
+  h1 {
+    padding-left: 30px;
+    padding-top: 50px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    .email {
+      width: 25%;
+    }
+    .linkedIn {
+      width: 25%;
+    }
+    .github {
+      width: 25%;
+    }
+  }
+}

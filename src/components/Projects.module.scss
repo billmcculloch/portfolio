@@ -1,6 +1,8 @@
 @import "/src/styles/config";
 
 .wrapper {
-  height: 100vh;
-  background-color: $cream;
+  h1 {
+    padding-left: 30px;
+    padding-top: 50px;
+  }
 }

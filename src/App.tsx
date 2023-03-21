@@ -1,16 +1,15 @@
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import Navbar from "./components/Navbar";
-import { HelmetProvider } from "react-helmet-async";
+import Contact from "./components/Contact";
 
 function App() {
   return (
     <>
-      <Navbar />
       <Hero />
       <About />
       <Projects />
+      <Contact />
     </>
   );
 }
