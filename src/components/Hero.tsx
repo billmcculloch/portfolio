@@ -41,6 +41,10 @@ function Hero() {
     window.addEventListener("scroll", () => handleScroll());
 
     return () => {
+      window.removeEventListener("mousemove", (e) => {
+        setCursorX(e.pageX);
+        setCursorY(e.pageY);
+      });
       window.removeEventListener("scroll", () => handleScroll());
       document.body.removeEventListener("mouseenter", handleMouseEnter);
       document.body.removeEventListener("mouseleave", handleMouseLeave);
