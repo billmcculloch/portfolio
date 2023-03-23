@@ -2,7 +2,7 @@ import { duration } from "@mui/material";
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import s from "./Hero.module.scss";
-import Navbar from "./Navbar";
+
 import Typewriter from "typewriter-effect";
 
 function Hero() {
@@ -15,13 +15,37 @@ function Hero() {
   const [cursorY, setCursorY] = useState<number>();
   const [cursor, setCursor] = useState<boolean>(false);
 
-  window.addEventListener("mousemove", (e) => {
-    setCursorX(e.pageX);
-    setCursorY(e.pageY);
-  });
+  useEffect(() => {
+    const handleMouseEnter = () => {
+      if (window.scrollY <= 1) {
+        gsap.to(cursorRef.current, {
+          opacity: 1,
+          duration: 0,
+        });
+        setCursor(false);
+      }
+    };
+    const handleMouseLeave = () => {
+      gsap.to(cursorRef.current, {
+        opacity: 0,
+        duration: 0,
+      });
+      setCursor(true);
+    };
+    document.body.addEventListener("mouseenter", handleMouseEnter);
+    document.body.addEventListener("mouseleave", handleMouseLeave);
+    window.addEventListener("mousemove", (e) => {
+      setCursorX(e.pageX);
+      setCursorY(e.pageY);
+    });
+    window.addEventListener("scroll", () => handleScroll());
 
-  window.addEventListener("scroll", () => handleScroll());
-  window.removeEventListener("scroll", () => handleScroll());
+    return () => {
+      window.removeEventListener("scroll", () => handleScroll());
+      document.body.removeEventListener("mouseenter", handleMouseEnter);
+      document.body.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
 
   const handleScroll = () => {
     var div = document.getElementById("bill");
