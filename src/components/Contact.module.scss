@@ -5,6 +5,9 @@
   background-color: $blue;
   height: 100vh;
   flex-direction: column;
+  @media screen and (max-width: 600px) {
+    flex-wrap: wrap;
+  }
 
   h1 {
     padding-left: 30px;
@@ -18,12 +21,21 @@
     padding-top: 50px;
     .email {
       width: 25%;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
     }
     .linkedIn {
       width: 25%;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
     }
     .github {
       width: 25%;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
     }
   }
 }

@@ -21,6 +21,16 @@
     margin-left: 5px;
     transition: all linear 0.3s;
   }
+
+  @media only screen and (max-width: 600px) {
+    .cursor {
+      opacity: 0;
+    }
+    .bill {
+      display: flex;
+      width: 90vw;
+    }
+  }
 }
 
 .sticky {

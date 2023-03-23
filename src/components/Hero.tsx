@@ -29,8 +29,10 @@ function Hero() {
       });
       setCursor(true);
     };
+
     document.body.addEventListener("mouseenter", handleMouseEnter);
     document.body.addEventListener("mouseleave", handleMouseLeave);
+
     window.addEventListener("mousemove", (e) => {
       setCursorX(e.pageX);
       setCursorY(e.pageY);
@@ -70,6 +72,8 @@ function Hero() {
       });
       setCursor(true);
     }
+
+    console.log(window.visualViewport);
 
     if (logoHeight == minHeight && top! <= 0) {
       setSticky(true);

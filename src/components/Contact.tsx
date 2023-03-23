@@ -11,7 +11,8 @@ export default function Contact() {
           <p style={{ textDecoration: "underline" }}>Email</p>
           <a>
             <p>
-              billrmcculloch@gmail.com <img src="/src/assets/arrow.svg" />
+              billrmcculloch@gmail.com &nbsp;&nbsp;
+              <img src="/src/assets/arrow.svg" />
             </p>
           </a>
         </div>
@@ -19,7 +20,8 @@ export default function Contact() {
           <p style={{ textDecoration: "underline" }}>LinkedIn</p>
           <a>
             <p>
-              link <img src="/src/assets/arrow.svg" />
+              link &nbsp;&nbsp;
+              <img src="/src/assets/arrow.svg" />
             </p>
           </a>
         </div>
@@ -27,7 +29,8 @@ export default function Contact() {
           <p style={{ textDecoration: "underline" }}>GitHub</p>
           <a>
             <p>
-              link <img src="/src/assets/arrow.svg" />
+              link &nbsp;&nbsp;
+              <img src="/src/assets/arrow.svg" />
             </p>
           </a>
         </div>
