@@ -10,7 +10,7 @@ export default function Projects() {
       <h1>My Projects</h1>
       <Project
         projectName={"Roady App"}
-        tech={"Flutter"}
+        tech={["Flutter", "bloc"]}
         colour={vars.green}
         projectUrl={"www.roady.co.nz"}
         description={
@@ -19,7 +19,7 @@ export default function Projects() {
       />
       <Project
         projectName={"Roady Customer Portal"}
-        tech={"React Typescript"}
+        tech={["React Typescript", "GraphQL", "Vite"]}
         colour={vars.green}
         projectUrl={"www.roady.co.nz"}
         description={
@@ -28,7 +28,7 @@ export default function Projects() {
       />
       <Project
         projectName={"Mousse Music"}
-        tech={"Gatsby"}
+        tech={["Gatsby"]}
         colour={vars.orange}
         projectUrl={"www.moussemusic.com"}
         description={

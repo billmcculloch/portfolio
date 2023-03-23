@@ -1,9 +1,6 @@
-import { duration } from "@mui/material";
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import s from "./Hero.module.scss";
-
-import Typewriter from "typewriter-effect";
 
 function Hero() {
   const logoRef = useRef(null);
@@ -79,25 +76,8 @@ function Hero() {
     } else {
       setSticky(false);
     }
-
-    // if (top! > 0) {
-    //   setSticky(true);
-    // } else {
-    //   setSticky(false);
-    // }
+    s;
   };
-
-  // const _showName = () => {
-  //   gsap.fromTo(
-  //     logoRef.current,
-  //     {
-  //       opacity: 0,
-  //     },
-  //     {
-  //       opacity: 1,
-  //     }
-  //   );
-  // };
 
   return (
     <>
@@ -105,19 +85,8 @@ function Hero() {
         className={s.wrapper}
         style={{ cursor: cursor ? "inherit" : "none" }}
       >
-        <p>
-          {/* <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("Hello, I'm")
-                .start()
-                .callFunction(() => {
-                  _showName();
-                });
-            }}
-          /> */}
-          Hello, I'm
-        </p>
+        <p>Hello, I'm</p>
+
         <div className={sticky ? s.sticky : ""}>
           <img
             src=" src/assets/Bill.svg"

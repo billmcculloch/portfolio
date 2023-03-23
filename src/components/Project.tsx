@@ -2,14 +2,15 @@ import { useEffect, useRef } from "react";
 import s from "./Project.module.scss";
 
 interface ProjectProps {
-  description?: string;
-  tech?: string;
-  projectName?: string;
-  projectUrl?: string;
-  colour?: string;
+  description: string;
+  tech: Array<string>;
+  projectName: string;
+  projectUrl: string;
+  colour: string;
 }
 
 export default function Project(props: ProjectProps) {
+  const techList = props.tech.map((t) => <li>{t}</li>);
   return (
     <div className={s.wrapper} style={{ backgroundColor: `${props.colour}` }}>
       <div className={s.title}>
@@ -17,8 +18,10 @@ export default function Project(props: ProjectProps) {
         <p>{props.projectName}</p>
       </div>
       <div className={s.tech}>
-        <p style={{ textDecoration: "underline" }}>Tech</p>
-        <p>{props.tech}</p>
+        <>
+          <p style={{ textDecoration: "underline" }}>Tech</p>
+          <ul>{techList}</ul>
+        </>
       </div>
       <div className={s.description}>
         <p>{props.description}</p>
