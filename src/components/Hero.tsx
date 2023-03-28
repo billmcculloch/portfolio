@@ -51,13 +51,18 @@ function Hero() {
   }, []);
 
   const handleScroll = () => {
-    var div = document.getElementById("bill");
-    var top = div?.getBoundingClientRect().y;
+    var end = document.getElementById("end");
+    var bg = document.getElementById("header");
+    var marker = bg?.getBoundingClientRect().y;
+    var gap = end?.getBoundingClientRect().y;
 
-    let scrollTop = window.scrollY,
-      minHeight = 70,
-      logoHeight = Math.max(minHeight, 650 - scrollTop);
-    setHeight(logoHeight);
+    if (bg != undefined && marker! < 0) {
+      bg!.style.backgroundSize = Math.max(20, gap! / 9) + "%";
+    } else {
+      bg!.style.backgroundSize = "90%";
+    }
+
+    var scrollTop = window.scrollY;
 
     if (scrollTop <= 1) {
       gsap.to(cursorRef.current, {
@@ -72,15 +77,6 @@ function Hero() {
       });
       setCursor(true);
     }
-
-    console.log(window.visualViewport);
-
-    if (logoHeight == minHeight && top! <= 0) {
-      setSticky(true);
-    } else {
-      setSticky(false);
-    }
-    s;
   };
 
   return (
@@ -89,18 +85,12 @@ function Hero() {
         className={s.wrapper}
         style={{ cursor: cursor ? "inherit" : "none" }}
       >
-        <p>Hello, I'm</p>
-
-        <div className={sticky ? s.sticky : ""}>
-          <img
-            src=" src/assets/Bill.svg"
-            className={s.bill}
-            ref={logoRef}
-            id="bill"
-            style={{ height: height, objectFit: "contain" }}
-          />
+        <div className={s.textWrapper}>
+          <p>Hello, I'm</p>
         </div>
+        <div className={s.header} id="header" />
       </div>
+      <div id="end" />
       <div
         ref={cursorRef}
         className={s.cursor}

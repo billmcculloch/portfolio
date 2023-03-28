@@ -6,6 +6,9 @@ body,
   scroll-behavior: smooth;
   cursor: default;
 }
+a {
+  cursor: pointer;
+}
 
 body {
   background-color: $green;

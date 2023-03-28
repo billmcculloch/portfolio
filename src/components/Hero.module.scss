@@ -1,16 +1,29 @@
 @import "/src/styles/config";
 
 .wrapper {
-  scroll-snap-type: proximity;
   height: 100vh;
   background-color: $green;
-  // margin-top: 100px;
-  p {
-    margin-left: 5px;
-    margin-bottom: 10px;
-    position: absolute;
-    top: 0;
-    font-size: 3rem;
+
+  .header {
+    height: 86vh;
+
+    background: url("../assets/Bill.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 90%;
+    margin-left: 30px;
+    transition: all linear 0.4s;
+  }
+
+  .textWrapper {
+    height: 14vh;
+    p {
+      margin-left: 30px;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 0;
+      font-size: 3rem;
+    }
   }
 
   .bill {

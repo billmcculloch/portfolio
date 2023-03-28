@@ -1,11 +1,10 @@
 @import "/src/styles/config";
 
 .wrapper {
-  height: 80vh;
   border-bottom: 1px solid $black;
   display: flex;
   flex-direction: row;
-  padding-left: 30px;
+  padding: 50px 30px;
   flex-wrap: wrap;
   padding-top: 50px;
   @media screen and (max-width: 600px) {
