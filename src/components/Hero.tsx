@@ -3,10 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import s from "./Hero.module.scss";
 
 function Hero() {
-  const logoRef = useRef(null);
   const cursorRef = useRef(null);
-
-  const [height, setHeight] = useState<number>(650);
   const [sticky, setSticky] = useState<boolean>(false);
   const [cursorX, setCursorX] = useState<number>();
   const [cursorY, setCursorY] = useState<number>();
@@ -55,14 +52,19 @@ function Hero() {
     var bg = document.getElementById("header");
     var marker = bg?.getBoundingClientRect().y;
     var gap = end?.getBoundingClientRect().y;
+    var scrollTop = window.scrollY;
 
-    if (bg != undefined && marker! < 0) {
-      bg!.style.backgroundSize = Math.max(20, gap! / 9) + "%";
+    if (marker! < 0) {
+      bg!.style.backgroundSize = Math.max(8, gap! / 10) + "%";
     } else {
-      bg!.style.backgroundSize = "90%";
+      bg!.style.backgroundSize = Math.min(80, gap! / 9) + "%";
     }
 
-    var scrollTop = window.scrollY;
+    if (gap! < 76) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
 
     if (scrollTop <= 1) {
       gsap.to(cursorRef.current, {
@@ -91,6 +93,9 @@ function Hero() {
         <div className={s.header} id="header" />
       </div>
       <div id="end" />
+      <div className={s.nav} style={{ opacity: sticky ? 1 : 0 }}>
+        <div className={s.navImage} />
+      </div>
       <div
         ref={cursorRef}
         className={s.cursor}

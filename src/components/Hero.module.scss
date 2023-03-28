@@ -4,19 +4,23 @@
   height: 100vh;
   background-color: $green;
 
-  .header {
-    height: 86vh;
+  @media only screen and (max-width: 600px) {
+    height: auto;
+    cursor: default;
+  }
 
+  .header {
+    height: 88vh;
     background: url("../assets/Bill.svg");
     background-repeat: no-repeat;
     background-position: bottom left;
-    background-size: 90%;
     margin-left: 30px;
+    background-size: 80%;
     transition: all linear 0.4s;
   }
 
   .textWrapper {
-    height: 14vh;
+    height: 12vh;
     p {
       margin-left: 30px;
       margin-bottom: 10px;
@@ -26,45 +30,50 @@
     }
   }
 
-  .bill {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: auto;
-    margin-left: 5px;
-    transition: all linear 0.3s;
-  }
-
   @media only screen and (max-width: 600px) {
-    .cursor {
-      opacity: 0;
-    }
-    .bill {
-      display: flex;
-      width: 90vw;
+    .header {
+      height: 40vh;
+      margin-bottom: 50px;
+      background-size: 90% !important;
     }
   }
 }
-
-.sticky {
+.nav {
   position: fixed;
-  height: 70px;
+  height: 75px;
   background-color: $blue;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
   border-bottom: 1px solid black;
-  transition: all linear 0.3s;
+  opacity: 0;
+  cursor: none;
+  transition: all linear 0.1s;
+  .navImage {
+    height: 75px;
+    background-image: url("../assets/Bill.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 8%;
+    margin-left: 30px;
+
+    @media only screen and (max-width: 600px) {
+      background-size: 25%;
+    }
+  }
 }
 
 .cursor {
-  height: 60px;
-  width: 60px;
+  height: 65px;
+  width: 65px;
   position: fixed;
   background-color: $green;
   border-radius: 50%;
   z-index: 999;
   pointer-events: none;
   mix-blend-mode: difference;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 }
