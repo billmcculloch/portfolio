@@ -39,3 +39,30 @@
     }
   }
 }
+
+.gallery {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  .galleryItem {
+    width: 25%;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-right: 17px;
+    box-sizing: content-box;
+    @media screen and (max-width: 600px) {
+      width: 30vw;
+      height: 350px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+}

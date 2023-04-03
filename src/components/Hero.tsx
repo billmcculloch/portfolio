@@ -54,10 +54,12 @@ function Hero() {
     var gap = end?.getBoundingClientRect().y;
     var scrollTop = window.scrollY;
 
-    if (marker! < 0) {
-      bg!.style.backgroundSize = Math.max(8, gap! / 10) + "%";
+    console.log(marker);
+
+    if (marker! <= 0) {
+      bg!.style.backgroundSize = Math.max(8, gap! / 7) + "%";
     } else {
-      bg!.style.backgroundSize = Math.min(80, gap! / 9) + "%";
+      bg!.style.backgroundSize = "72%";
     }
 
     if (gap! < 76) {

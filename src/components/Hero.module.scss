@@ -10,13 +10,13 @@
   }
 
   .header {
-    height: 88vh;
+    height: 86vh;
     background: url("../assets/Bill.svg");
     background-repeat: no-repeat;
     background-position: bottom left;
     margin-left: 30px;
-    background-size: 80%;
-    transition: all linear 0.3s;
+    background-size: 72%;
+    transition: all linear 0.2s;
   }
 
   .textWrapper {
@@ -32,9 +32,10 @@
 
   @media only screen and (max-width: 600px) {
     .header {
-      height: 40vh;
+      height: 80vh;
       margin-bottom: 50px;
       background-size: 90% !important;
+      background-position: left center;
     }
   }
 }
@@ -54,7 +55,7 @@
     height: 75px;
     background-image: url("../assets/Bill.svg");
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: left center;
     background-size: 8%;
     margin-left: 30px;
 
