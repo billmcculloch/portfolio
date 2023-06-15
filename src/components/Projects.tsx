@@ -9,30 +9,40 @@ export default function Projects() {
     <div className={s.wrapper}>
       <h1>My Projects</h1>
       <Project
-        projectName={"Roady App"}
+        projectName={"The Roady App"}
         tech={["Flutter", "bloc"]}
+        images={[
+          "/src/assets/app_one.png",
+          "/src/assets/app_two.png",
+          "/src/assets/app_three.png",
+          "/src/assets/app_four.png",
+        ]}
         colour={vars.green}
-        projectUrl={"www.roady.co.nz"}
+        imagesPortrait={true}
+        projectUrl={"https://apps.apple.com/nz/app/roady/id1614907429"}
         description={
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+          "I played a key role in the end to end build and release of the Roady App. This included building frontend widgets, consuming data from our GraphQL API and state management using bloc. The Roady App ranks in the Top 100 for Travel Apps on the App Store, with a rating of 4.7 and over 30,000 downloads since launching in June 2022."
         }
       />
       <Project
         projectName={"Roady Customer Portal"}
-        tech={["React Typescript", "GraphQL", "Vite"]}
+        tech={["React", "Typescript", "Sass", "GraphQL", "Vite"]}
         colour={vars.green}
-        projectUrl={"www.roady.co.nz"}
+        imagesPortrait={false}
+        projectUrl={"https://dashboard.roady.co.nz/login"}
         description={
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+          "With the Roady App released, we built React web app written in Typescript to create and manage content on the app. This included an integration with Stripe to allow customer subscriptions, a key revenue stream for Roady. Examples of my contribution included building reusable components and setting up the authentication, leveraging the existing AWS Cognito infrastructure used for the Roady App."
         }
       />
       <Project
+        imagesPortrait={false}
         projectName={"Mousse Music"}
-        tech={["Gatsby"]}
+        tech={["React", "Gatsby", "Shopify"]}
         colour={vars.orange}
         projectUrl={"www.moussemusic.com"}
+        images={["/src/assets/mousse_one.png", "/src/assets/mousse_two.png"]}
         description={
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+          "In my spare time I built a website for Mousse, a friends band. I used Gatsby to ensure the site was performant, and I enjoyed the challenge of adding e-commerce functionality to a static site. I achieved this using webhooks between Shopify and Netlify."
         }
       />
     </div>

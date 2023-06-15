@@ -9,7 +9,7 @@ export default function Contact() {
       <div className={s.container}>
         <div className={s.email}>
           <p style={{ textDecoration: "underline" }}>Email</p>
-          <a>
+          <a href={"mailto: billrmcculloch@gmail.com"}>
             <p>
               billrmcculloch@gmail.com &nbsp;&nbsp;
               <img src="/src/assets/arrow.svg" />
@@ -18,18 +18,18 @@ export default function Contact() {
         </div>
         <div className={s.linkedIn}>
           <p style={{ textDecoration: "underline" }}>LinkedIn</p>
-          <a>
+          <a href={"https://www.linkedin.com/in/bill-mcculloch/"}>
             <p>
-              link &nbsp;&nbsp;
+              linkedin.com/in/bill-mcculloch &nbsp;&nbsp;
               <img src="/src/assets/arrow.svg" />
             </p>
           </a>
         </div>
         <div className={s.github}>
           <p style={{ textDecoration: "underline" }}>GitHub</p>
-          <a>
+          <a href={"https://github.com/billmcculloch"}>
             <p>
-              link &nbsp;&nbsp;
+              github.com/billmcculloch &nbsp;&nbsp;
               <img src="/src/assets/arrow.svg" />
             </p>
           </a>
