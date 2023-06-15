@@ -1,6 +1,8 @@
 import { useEffect, useLayoutEffect, useRef } from "react";
 import s from "./Project.module.scss";
 
+import arrow from "/arrow.svg";
+
 interface ProjectProps {
   imagesPortrait: boolean;
   description: string;
@@ -32,7 +34,7 @@ export default function Project(props: ProjectProps) {
           <br />
           <a href={props.projectUrl} target={"_blank"}>
             <p>
-              Check it out &nbsp;&nbsp; <img src="/src/assets/arrow.svg" />
+              Check it out &nbsp;&nbsp; <img src={arrow} />
             </p>
           </a>
         </div>

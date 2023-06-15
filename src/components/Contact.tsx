@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import Project from "./Project";
 import s from "./Contact.module.scss";
-import arrow from "/src/assets/arrow.svg";
+import arrow from "/arrow.svg";
 
 export default function Contact() {
   return (
