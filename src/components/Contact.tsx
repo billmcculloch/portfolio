@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import Project from "./Project";
 import s from "./Contact.module.scss";
+import arrow from "/src/assets/arrow.svg";
 
 export default function Contact() {
   return (
@@ -12,7 +13,7 @@ export default function Contact() {
           <a href={"mailto: billrmcculloch@gmail.com"} target={"_blank"}>
             <p>
               billrmcculloch@gmail.com &nbsp;&nbsp;
-              <img src="/src/assets/arrow.svg" />
+              <img src={arrow} />
             </p>
           </a>
         </div>
@@ -24,7 +25,7 @@ export default function Contact() {
           >
             <p>
               linkedin.com/in/bill-mcculloch &nbsp;&nbsp;
-              <img src="/src/assets/arrow.svg" />
+              <img src={arrow} />
             </p>
           </a>
         </div>
@@ -33,7 +34,7 @@ export default function Contact() {
           <a href={"https://github.com/billmcculloch"} target={"_blank"}>
             <p>
               github.com/billmcculloch &nbsp;&nbsp;
-              <img src="/src/assets/arrow.svg" />
+              <img src={arrow} />
             </p>
           </a>
         </div>

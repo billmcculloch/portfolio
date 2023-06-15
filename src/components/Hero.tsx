@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import s from "./Hero.module.scss";
+import bill from "../assets/Bill.svg";
 
 function Hero() {
   const cursorRef = useRef(null);
@@ -92,7 +93,15 @@ function Hero() {
         <div className={s.textWrapper}>
           <p>Hello, I'm</p>
         </div>
-        <div className={s.header} id="header" />
+        <div
+          className={s.header}
+          id="header"
+          // style={{
+          //   background: `url(${bill}`,
+          //   backgroundRepeat: "no-repeat",
+          //   backgroundSize: "72%",
+          // }}
+        />
       </div>
       <div id="end" />
       <div className={s.nav} style={{ opacity: sticky ? 1 : 0 }}>

@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import s from "./About.module.scss";
 
+import profileImage from "/src/assets/profile-pic.jpg";
+
 function About() {
   return (
     <div className={s.wrapper} id={"about"}>
@@ -24,7 +26,10 @@ function About() {
         </p>
       </div>
       <div className={s.profilepic}>
-        <div className={s.img} />
+        <div
+          className={s.img}
+          style={{ backgroundImage: `url(${profileImage})` }}
+        />
       </div>
     </div>
   );

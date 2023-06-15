@@ -12,10 +12,10 @@ export default function Projects() {
         projectName={"The Roady App"}
         tech={["Flutter", "bloc"]}
         images={[
-          "/src/assets/app_one.png",
-          "/src/assets/app_two.png",
-          "/src/assets/app_three.png",
-          "/src/assets/app_four.png",
+          "../../public/app_one.png",
+          "../../public/app_two.png",
+          "../../public/app_three.png",
+          "../../public/app_four.png",
         ]}
         colour={vars.green}
         imagesPortrait={true}
@@ -27,7 +27,7 @@ export default function Projects() {
       <Project
         projectName={"Roady Customer Portal"}
         tech={["React", "Typescript", "Sass", "GraphQL", "Vite"]}
-        images={["/src/assets/portal_one.png", "/src/assets/portal_two.png"]}
+        images={["../../public/portal_one.png", "../../public/portal_two.png"]}
         colour={vars.green}
         imagesPortrait={false}
         projectUrl={"https://dashboard.roady.co.nz/login"}
@@ -41,7 +41,7 @@ export default function Projects() {
         tech={["React", "Gatsby", "Shopify"]}
         colour={vars.orange}
         projectUrl={"www.moussemusic.com"}
-        images={["/src/assets/mousse_one.png", "/src/assets/mousse_two.png"]}
+        images={["../../public/mousse_one.png", "../../public/mousse_two.png"]}
         description={
           "In my spare time I built a website for Mousse, a friends band. I used Gatsby to ensure the site was performant, and I enjoyed the challenge of adding e-commerce functionality to a static site. I achieved this using webhooks between Shopify and Netlify."
         }
