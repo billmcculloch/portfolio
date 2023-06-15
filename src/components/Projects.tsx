@@ -4,6 +4,15 @@ import s from "./Projects.module.scss";
 
 import vars from "../styles/_exports.module.scss";
 
+import appOne from "/app_one.png";
+import appTwo from "/app_two.png";
+import appThree from "/app_three.png";
+import appFour from "/app_four.png";
+import portalOne from "/portal_one.png";
+import portalTwo from "/portal_two.png";
+import mousseOne from "/mousse_one.png";
+import mousseTwo from "/mousse_two.png";
+
 export default function Projects() {
   return (
     <div className={s.wrapper}>
@@ -11,12 +20,7 @@ export default function Projects() {
       <Project
         projectName={"The Roady App"}
         tech={["Flutter", "bloc"]}
-        images={[
-          "../../public/app_one.png",
-          "../../public/app_two.png",
-          "../../public/app_three.png",
-          "../../public/app_four.png",
-        ]}
+        images={[appOne, appTwo, appThree, appFour]}
         colour={vars.green}
         imagesPortrait={true}
         projectUrl={"https://apps.apple.com/nz/app/roady/id1614907429"}
@@ -27,7 +31,7 @@ export default function Projects() {
       <Project
         projectName={"Roady Customer Portal"}
         tech={["React", "Typescript", "Sass", "GraphQL", "Vite"]}
-        images={["../../public/portal_one.png", "../../public/portal_two.png"]}
+        images={[portalOne, portalTwo]}
         colour={vars.green}
         imagesPortrait={false}
         projectUrl={"https://dashboard.roady.co.nz/login"}
@@ -41,7 +45,7 @@ export default function Projects() {
         tech={["React", "Gatsby", "Shopify"]}
         colour={vars.orange}
         projectUrl={"https://moussemusic.com/"}
-        images={["../../public/mousse_one.png", "../../public/mousse_two.png"]}
+        images={[mousseOne, mousseTwo]}
         description={
           "In my spare time I built a website for Mousse, a friends band. I used Gatsby to ensure the site was performant, and I enjoyed the challenge of adding e-commerce functionality to a static site. I achieved this using webhooks between Shopify and Netlify."
         }
