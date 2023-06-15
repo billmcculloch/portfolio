@@ -41,7 +41,9 @@ export default function Project(props: ProjectProps) {
           <>
             {props.images?.map((i) => (
               <div
-                className={s.galleryItem}
+                className={
+                  props.imagesPortrait ? s.galleryItem : s.galleryLandscape
+                }
                 style={{ backgroundImage: `url(${i})` }}
               />
             ))}

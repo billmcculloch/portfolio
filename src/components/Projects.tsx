@@ -27,6 +27,7 @@ export default function Projects() {
       <Project
         projectName={"Roady Customer Portal"}
         tech={["React", "Typescript", "Sass", "GraphQL", "Vite"]}
+        images={["/src/assets/portal_one.png", "/src/assets/portal_two.png"]}
         colour={vars.green}
         imagesPortrait={false}
         projectUrl={"https://dashboard.roady.co.nz/login"}

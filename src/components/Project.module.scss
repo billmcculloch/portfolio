@@ -48,12 +48,24 @@
   width: 100%;
   gap: 10px;
   align-items: center;
+  .galleryLandscape {
+    width: 600px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 17px;
+    box-sizing: content-box;
+    @media screen and (max-width: 600px) {
+      height: 200px;
+      width: 600px;
+      background-position: left;
+    }
+  }
   .galleryItem {
     width: 25%;
     height: 500px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
     padding-right: 17px;
     box-sizing: content-box;
     @media screen and (max-width: 600px) {
