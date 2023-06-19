@@ -32,7 +32,7 @@ export default function Projects() {
         projectName={"Roady Customer Portal"}
         tech={["React", "Typescript", "Sass", "GraphQL", "Vite"]}
         images={[portalOne, portalTwo]}
-        colour={vars.green}
+        colour={vars.blue}
         imagesPortrait={false}
         projectUrl={"https://dashboard.roady.co.nz/login"}
         description={
