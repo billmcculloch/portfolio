@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import s from "./About.module.scss";
 
-import profileImage from "../../public/profile-pic.jpg";
+import profileImage from "/profile-pic.jpg";
 
 function About() {
   return (

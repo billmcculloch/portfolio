@@ -11,7 +11,7 @@
 
   .header {
     height: 86vh;
-    background: url("../../public/Bill.svg");
+    background: url("/Bill.svg");
     background-repeat: no-repeat;
     background-position: bottom left;
     margin-left: 30px;
@@ -50,10 +50,10 @@
   border-bottom: 1px solid black;
   opacity: 0;
   cursor: none;
-  transition: all linear 0.1s;
+  transition: all linear 0.5s;
   .navImage {
     height: 75px;
-    background-image: url("../../public/Bill.svg");
+    background-image: url("/Bill.svg");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 8%;
