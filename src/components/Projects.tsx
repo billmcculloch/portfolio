@@ -44,7 +44,7 @@ export default function Projects() {
         projectName={"Mousse Music"}
         tech={["React", "Gatsby", "Shopify"]}
         colour={vars.orange}
-        projectUrl={"https://moussemusic.com/"}
+        projectUrl={"https://main--elaborate-salmiakki-9c7831.netlify.app/"}
         images={[mousseOne, mousseTwo]}
         description={
           "In my spare time I built a website for Mousse, a friends band. I used Gatsby to ensure the site was performant, and I enjoyed the challenge of adding e-commerce functionality to a static site. I achieved this using webhooks between Shopify and Netlify."
