@@ -1,5 +1,3 @@
-import { useEffect, useRef } from "react";
-import Project from "./Project";
 import s from "./Contact.module.scss";
 import arrow from "/arrow.svg";
 

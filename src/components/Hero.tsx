@@ -1,7 +1,6 @@
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import s from "./Hero.module.scss";
-import bill from "../assets/Bill.svg";
 
 function Hero() {
   const cursorRef = useRef(null);
@@ -50,18 +49,8 @@ function Hero() {
 
   const handleScroll = () => {
     var end = document.getElementById("end");
-    var bg = document.getElementById("header");
-    var marker = bg?.getBoundingClientRect().y;
     var gap = end?.getBoundingClientRect().y;
     var scrollTop = window.scrollY;
-
-    console.log(marker);
-
-    if (marker! <= 0) {
-      bg!.style.backgroundSize = Math.max(8, gap! / 7) + "%";
-    } else {
-      bg!.style.backgroundSize = "72%";
-    }
 
     if (gap! < 76) {
       setSticky(true);
@@ -93,15 +82,7 @@ function Hero() {
         <div className={s.textWrapper}>
           <p>Hello, I'm</p>
         </div>
-        <div
-          className={s.header}
-          id="header"
-          // style={{
-          //   background: `url(${bill}`,
-          //   backgroundRepeat: "no-repeat",
-          //   backgroundSize: "72%",
-          // }}
-        />
+        <div className={s.header} id="header" />
       </div>
       <div id="end" />
       <div className={s.nav} style={{ opacity: sticky ? 1 : 0 }}>

@@ -15,12 +15,22 @@
     background-repeat: no-repeat;
     background-position: bottom left;
     margin-left: 30px;
-    background-size: 73%;
-    transition: all linear 0.2s;
+    background-size: 70%;
+    animation: fade-in 3s;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100;
+    }
   }
 
   .textWrapper {
     height: 12vh;
+    animation: fade-in 1s;
     p {
       margin-left: 30px;
       margin-bottom: 10px;
@@ -50,7 +60,7 @@
   border-bottom: 1px solid black;
   opacity: 0;
   cursor: none;
-  transition: all linear 0.5s;
+  transition: all linear 500ms;
   .navImage {
     height: 75px;
     background-image: url("/Bill.svg");

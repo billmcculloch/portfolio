@@ -1,4 +1,3 @@
-import { useEffect, useLayoutEffect, useRef } from "react";
 import s from "./Project.module.scss";
 
 import arrow from "/arrow.svg";
@@ -50,19 +49,6 @@ export default function Project(props: ProjectProps) {
               />
             ))}
           </>
-
-          {/* <div
-            className={s.galleryItem}
-            style={{ backgroundImage: `url("/src/assets/app_one.png")` }}
-          />
-          <div
-            className={s.galleryItem}
-            style={{ backgroundImage: `url("/src/assets/app_one.png")` }}
-          />
-          <div
-            className={s.galleryItem}
-            style={{ backgroundImage: `url("/src/assets/app_one.png")` }}
-          /> */}
         </div>
       </div>
     </>
